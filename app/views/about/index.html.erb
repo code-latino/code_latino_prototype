@@ -1,2 +1,95 @@
-<h1>About#index</h1>
-<p>Find me in app/views/about/index.html.erb</p>
+  <div class="container">
+    <div class="homepage-logo">
+        <a href="javascript:void(0)" class="mobile-logo">
+         <img src="<%= image_path('codelatino-logo.png') %>">
+        </a>
+      </div>
+  </div>
+  <div id="js-parallax-window" class="parallax-window">
+    <div class="parallax-static-content">
+      <article class="type-system-sans container marquee-title">
+        <h1>
+          Empowering the Latino Tech Community
+        </h1>
+        <h2 class="marquee-title-event-date">Coming up: JUL 13</h2>
+        <br>
+        <h2 >
+          <span class="marquee-title-event">Intro to Web Development</span>
+        </h2>
+        <br>
+        <p>
+          <button class="alert-button" href="#"> REGISTER </button>
+        </p>
+      </article>
+    </div>
+    <div id="js-parallax-background" class="parallax-background homepage-header">
+    </div>
+  </div>
+
+  
+  <article class="type-system-sans home-page-events">
+    <div class="container homepage-content">
+      <br>
+      <br>
+      <p class="statement">
+        Code Latino’s goal is to provide powerful hands­on Tech events for everyone and anyone in the latino comunity that seek professional help in web development and design.
+      </p>
+      <h1> EVENTS </h1>
+      <div class="flex-boxes home-page-event-hero">
+        <a href="javascript:void(0)" class="flex-box flex-box-big">
+          <div class="tag">
+            <img class="tag-ribbon" src="<%= image_path('ribbon-top.png') %>"> WORKSHOP
+          </div>
+          <img src="<%= image_path('basic-programming-icon.png') %>">
+          <br/>
+          <h1 class="flex-title">Intro to Web Development </h1>
+          <p>Join us in our first workshop for latinos where we will cover the fundamentals of web development as well as share some insights from influent leaders in the Latino Tech Community</p>
+          <h3>This event is <span class="highlight">FREE</span>.</h3>
+          <br/><br/>
+          <span class="alert-button"> REGISTER </span> 
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <article class="type-system-sans highlight-section">
+    <div class="container homepage-content">
+      <h1>Why Code Latino</h1>
+      <br/>
+      <p>
+        <img class="tag-ribbon" src="<%= image_path('latinos-stats.png') %>">
+      </p>
+      <h3>In 2013, among software developers, only <span class="highlight"> 5% </span>were Latinos.</h3>
+      <p>
+        Our Mision is to empower the Latino Comunity to pursue careers in web development &amp; design. By providing training and networking opportunities we believe we can help close the diversity gap in the Tech industry.
+      </p>
+    </div>
+  </article>
+
+
+  <article class="type-system-sans contact-section">
+    <div class="container homepage-content">
+      <h1>Get involved</h1>
+      <br/>
+      <p>
+        Help us spread the word and grow our comunity. We would love to hear from you!
+      </p>
+      <p>
+        <img class="email-icon" src="<%= image_path('email.png') %>">
+        <br/><br/>
+        <a class="email" href="mailto:info@codelatino.com">info@codelatino.com</a><br/>
+      </p>
+      <p>
+        <a class="social-media-icons" href=""> 
+          <img class="tag-ribbon" src="<%= image_path('facebook.png') %>">
+        </a>
+        <a class="social-media-icons" href=""> 
+          <img class="tag-ribbon" src="<%= image_path('twitter.png') %>">
+        </a>
+        <a class="social-media-icons" href=""> 
+          <img class="tag-ribbon" src="<%= image_path('meetup.png') %>">
+        </a>
+      </p>
+
+    </div>
+  </article>
