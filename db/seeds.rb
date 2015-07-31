@@ -12,3 +12,9 @@ Event.create(
     url: "http://www.meetup.com/Code-Latino/",
     event_date: DateTime.now + 20.days,
   )
+
+
+Course.create(
+    name: "Back End Dev",
+    description: "Learn how to code",
+  )
