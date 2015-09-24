@@ -158,6 +158,13 @@ article.type-system-sans {
   }
 }
 
+button {
+  background-color: $dark-gray;
+  color: white;
 
+  &:active, &:focus, &:hover, &:visited {
+    background-color: $danger-color;
+  }
+}
 
 
