@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
   get '/' => 'about#index'
+  get '/blog' => 'posts#index'
+  get '/blog/new' => 'posts#new'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

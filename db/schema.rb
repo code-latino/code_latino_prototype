@@ -11,9 +11,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20151021031140) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "courses", force: :cascade do |t|
+    t.integer  "course_id"
+    t.string   "name"
+    t.string   "description"
+    t.integer  "user_id"
+    t.integer  "instructor_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title",                      null: false
+    t.string   "description"
+    t.string   "image_url"
+    t.string   "url",                        null: false
+    t.datetime "event_date"
+    t.boolean  "status",      default: true
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  create_table "posts", force: :cascade do |t|
+    t.integer  "post_id"
+    t.string   "title"
+    t.string   "image"
+    t.string   "date"
+    t.string   "author"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
 end
