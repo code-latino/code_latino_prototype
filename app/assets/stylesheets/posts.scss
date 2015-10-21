@@ -1,3 +1,4 @@
-// Place all the styles related to the posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.post-block {
+  @include span-columns(3);
+    @include omega(4n);
+}
