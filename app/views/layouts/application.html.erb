@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>CodeLatinoProto</title>
+  <title>Code Latino Chicago</title>
+  <meta property="og:title" content="Code Latino Chicago" />
+  <meta property="og:description" content="Empowering the Latino Tech Community" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="<%= request.original_url %>" />
+  <meta property="og:image" content="<%= image_path('codelatino-logo.png') %>" />
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
