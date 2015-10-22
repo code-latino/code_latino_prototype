@@ -2,6 +2,21 @@
   <% @posts.each do |post| %>
     <div class="post-block"> 
       <h2><%= post.title %></h2>
+      <p>
+        <%=h truncate(post.content, :length => 80) %>
+      </p>
+      <a href="#"> View More </a>
     </div>
   <% end %>
 </div>
+
+
+<h1> Header 1 </h1>
+<h2> Header 2 </h2>
+<h3> Header 3 </h3>
+<h4> Header 4 </h4>
+<h5> Header 5 </h5>
+<h6> Header 6 </h6>
+<p> Curabitur blandit tempus porttitor. Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras mattis consectetur purus sit amet fermentum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.</p>
+
+

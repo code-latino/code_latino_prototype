@@ -9,21 +9,31 @@
 
 </head>
 <body>
-  <div class="container">
-    <div class="homepage-logo">
-      <a href="javascript:void(0)" class="mobile-logo">
-        <img src="<%= image_path('codelatino-logo.png') %>">
-      </a>
-    </div>
-  </div>
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/blog">Blog</a></li>
-    <li><a href="/about">About</a></li>
-    <li><a href="/blog/new">New blog Post</a></li>
+   <div class="container">
+      <div class="homepage-logo">
+         <a href="javascript:void(0)" class="mobile-logo">
+            <img src="<%= image_path('codelatino-logo.png') %>">
+         </a>
+      </div>
+   </div>
+   <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/blog/new">New blog Post</a></li>                     
+   
   </ul>
-  
-  <%= yield %>
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+    <%= yield %>
 
 </body>
 </html>
+
+
+
+
+
+
+
+

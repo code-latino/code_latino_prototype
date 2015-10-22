@@ -31,7 +31,7 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans" "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   font-weight: 600;
   line-height: 1;
@@ -60,7 +60,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans" "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em; }
 
 label {
@@ -79,7 +79,7 @@ textarea {
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans" "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em;
@@ -165,7 +165,7 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
   color: #333;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "PT Sans" "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -175,13 +175,32 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Titillium";
   font-size: 1em;
   line-height: 1.2;
   margin: 0 0 0.75em; }
 
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.8em; }
+
+h3 {
+  font-size: 1.6em; }
+
+h4 {
+  font-size: 1.4em; }
+
+h5 {
+  font-size: 1.2em; }
+
+h6 {
+  font-size: 1em; }
+
 p {
-  margin: 0 0 0.75em; }
+  margin: 0 0 0.75em;
+  font-size: 1.2em; }
 
 a {
   color: #477dca;
@@ -342,7 +361,7 @@ article.type-system-sans {
         font-size: 2.4em; } }
   article.type-system-sans h2 {
     font-family: "PT Sans", sans-serif;
-    font-size: 1.2em;
+    font-size: 1.8em;
     font-weight: 400;
     line-height: 1.4em;
     margin-bottom: 1.2em; }
@@ -667,10 +686,7 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 100%;
+  margin-bottom: 2em; }
   .post-block:last-child {
     margin-right: 0; }
-  .post-block:nth-child(4n) {
-    margin-right: 0; }
-  .post-block:nth-child(4n+1) {
-    clear: left; }
