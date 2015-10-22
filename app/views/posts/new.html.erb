@@ -1,3 +1,14 @@
-<h2>
-  this is a new blog post
-</h2>
+<div class="center">
+
+      <h1> Add a new post </h1>
+      
+      <%=form_tag'/blog/create' do%>
+        <%=label_tag :title%>
+        <%=text_field_tag :title%>
+        <%=label_tag :content%>
+        <%=text_field_tag :content%>
+
+        <%=submit_tag "Add"%>
+      <%end%>   
+</div>
+
