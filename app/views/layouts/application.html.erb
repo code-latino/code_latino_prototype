@@ -7,10 +7,13 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="<%= request.original_url %>" />
   <meta property="og:image" content="<%= image_path('codelatino-logo.png') %>" />
+  <link rel="icon" href="<%= image_path('favicon.ico') %>" type="image/x-icon"/>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 	<body ng-app="app">
 
