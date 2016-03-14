@@ -5,10 +5,8 @@ body {
   margin: 0;
   font-family: $sans-serif!important;
   @include font-smoothing;
-}
-
-.container {
-  /*@include outer-container;*/
+  font-size: 18px!important;
+  color: black;
 }
 
 .homepage-logo {
@@ -39,7 +37,6 @@ body {
     padding: 20px;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: 'Titillium', sans-serif;
   };
 }
 
@@ -61,9 +58,10 @@ body {
   }
 
   h1, h2, h3, h4, p {
-    text-align: center
+    text-align: center;
   };
 }
+
 
 .home-page-events {
   padding: 60px 0;
