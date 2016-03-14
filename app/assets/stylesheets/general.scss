@@ -32,6 +32,16 @@ button {
   }
 }
 
+
+.btn {
+  font-size: 20px!important;
+  padding: 10px 30px!important;
+  background-color: $alert-color!important;
+  color: black!important;
+  font-weight: bold!important;
+  border: none!important;
+}
+
 // FONT OVERWRITE
 
 h2 {
