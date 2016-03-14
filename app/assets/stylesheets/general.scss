@@ -11,6 +11,19 @@ $extra-light-color: #f7f8f9; /* extra light grey */
 $dark-color: #878c8f;  /* dark grey */
 
 
+// FONT SMOOTHING
+
+@mixin font-smoothing($value: antialiased) {
+  @if $value == antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  @else {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: auto;
+  }
+}
+
 button {
   color: white;
 
