@@ -1,0 +1,150 @@
+/* Use this file to put all reusable ui components. If you want to customize any of this components it should be done at an App/section level */
+
+/* BUTTONS */
+
+.default-button {
+  $base-color: $light-color;
+  background-color: $base-color;
+  color: darken( $base-color, 50% );
+  padding: 15px 40px;
+  font-weight: 800;
+  /*@include border-top-radius(5px);*/
+  /*@include border-bottom-radius(5px);*/
+  &:hover {
+    background-color: lighten( $base-color, 10% );
+    color: darken( $base-color, 50% );
+  };
+}
+
+.alert-button {
+ $base-color: $alert-color;
+ background-color: $base-color;
+ color: darken( $base-color, 50% );
+ padding: 15px 40px;
+ font-weight: 800;
+ /*@include border-top-radius(5px);*/
+ /*@include border-bottom-radius(5px);*/
+ &:hover, &:active, &:focus, &:visited {
+   background-color: lighten( $base-color, 10% );
+   color: darken( $base-color, 50% );
+ };
+  
+}
+
+.primary-button {
+
+
+}
+.secondary-button{
+
+}
+
+
+/*PARALLAX HEADER DEFAULT*/
+
+$parallax-window-height: 30em;
+$parallax-background-height: $parallax-window-height * 2;
+
+.parallax-window {
+  max-height: $parallax-window-height;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.parallax-static-content {
+  color: #9A9A8A;
+  padding: 8em 0;
+  position: relative;
+  z-index: 9;
+}
+
+.parallax-background {
+  background: image-url("header-bg.jpg") repeat;
+  background-position: top;
+  background-size: cover;
+  background-color: #454545;
+  height: $parallax-background-height;
+  left: 0;
+  position: absolute;
+  top: - $parallax-window-height / 3;
+  width: 100%;
+}
+
+// Based on http://codepen.io/skeurentjes/
+
+
+/* FLEX BOX */
+
+
+.flex-boxes {
+  $base-border-radius: 3px !default;
+  $base-background-color: white !default;
+  $dark-gray: #333 !default;
+  $light-gray: #DDD !default;
+  $base-font-color: $dark-gray !default;
+  $flex-box-border-color: $light-gray;
+  $flex-box-border: 1px solid $flex-box-border-color;
+  $flex-box-background: lighten($light-gray, 10%);
+  $flex-box-gutter: 0.4em;
+  $flex-box-width: 18em;
+  $flex-box-color: transparentize($base-font-color, 0.3);
+  $flex-box-top-colors: 
+    tomato, 
+    #72BFBF, 
+    #92B1E3, 
+    #E3D743,
+    #CCC,
+    #F6C05C;
+
+    /*@include clearfix;*/
+    /*@include display(flex);*/
+    /*@include justify-content(center);*/
+    /*@include align-items(stretch);*/
+    /*@include flex-wrap(wrap);*/
+    clear: both;
+    text-align: center;
+
+  .flex-box {
+    /*@include transition (all 0.2s ease-in-out);*/
+    /*@include flex(2 2 15em);*/
+    /*@include align-self(stretch);*/
+    background: $flex-box-background;
+    border-radius: $base-border-radius;
+    box-shadow: inset 0 0 1px $flex-box-border-color, 0 2px 4px darken($base-background-color, 10%);
+    display: block;
+    margin: $flex-box-gutter;
+    padding: 2em 2em 3em 2em;
+    text-decoration: none;
+    border-top: 10px solid $light-color;
+      &:focus,
+      &:hover {
+        background-color: darken ($base-background-color, 5%);
+      }
+    }
+
+    img {
+      display: block;
+      height: 5em;
+      margin-bottom: 2em;
+      margin: auto;
+    }
+
+    .flex-title {
+      color: $secondary-color;
+      font-weight: 800;
+      margin-top: 1em;
+      margin-bottom: 1em;
+    }
+
+    p {
+      color: transparentize($flex-box-color, 0.1);
+      line-height: 1.5em;
+      margin: auto;
+    }
+  
+}
+
+
+
