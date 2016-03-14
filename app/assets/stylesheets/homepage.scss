@@ -98,10 +98,6 @@ body {
     height: 250px;
     width: auto;
   }
-  h3 {
-    text-transform: uppercase;
-    font-weight: 800;
-  };
 };
 
 
@@ -132,6 +128,7 @@ body {
     display: inline-block;
     font-weight: 800;
     color: white;
+    font-size: 1.5em;
   };
   a.social-media-icons{
     display: inline-block;
@@ -145,5 +142,12 @@ body {
 
 .container {
   text-align: center;
+}
+
+.contact-section h2 {
+  color: white;
+}
+.homepage-content h2 {
+  font-weight: bold;
 }
 
