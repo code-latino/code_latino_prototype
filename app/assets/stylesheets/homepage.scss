@@ -19,7 +19,7 @@ body {
 .header-tag-ribbon {
   position: absolute;
   left: 50%;
-  top: -60px;
+  top: 0;
   margin-left: -20px;
 }
 .marquee-title {
@@ -47,6 +47,14 @@ body {
   .parallax-static-content {
     padding: 6em 0 4em;
   }
+}
+
+
+.parallax-background {
+  position: relative;
+  height: 400px;
+  top: 0;
+  padding: 50px 20px;
 }
 
 .homepage-content {
