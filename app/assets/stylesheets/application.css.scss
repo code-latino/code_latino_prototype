@@ -11,9 +11,8 @@
  * file per style scope.
  *
  */
-@import "bourbon";
-@import "base/base";
-@import "neat";
+
+@import "normalize";
 @import "general";
 @import "components";
 @import "homepage";
