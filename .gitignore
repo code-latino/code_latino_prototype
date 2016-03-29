@@ -11,6 +11,5 @@
 /log/*
 !/log/.keep
 /tmp
-Gemfile.lock
 .DS_Store
 .DS_Storepublic
