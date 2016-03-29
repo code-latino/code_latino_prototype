@@ -1,12 +1,11 @@
-$sans-serif: 'Titillium', sans-serif;
 
 /* Header */
 body {
   margin: 0;
-  font-family: $sans-serif!important;
-  @include font-smoothing;
-  font-size: 18px!important;
-  color: black;
+}
+
+.container {
+  @include outer-container;
 }
 
 .homepage-logo {
@@ -19,24 +18,27 @@ body {
 .header-tag-ribbon {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: -60px;
   margin-left: -20px;
 }
 .marquee-title {
   color: white;
   h1 {
-    font-weight: 600;
+    font-weight: 600!important;
   };
   h1, h2, a, p {
     text-align: center;
   };
   .marquee-title-event-date {
     color: $alert-color;
+    font-size: 1.2em;
   }
   .marquee-title-event {
     padding: 20px;
     text-transform: uppercase;
+    font-size: 1.6em;
     font-weight: bold;
+    font-family: 'Titillium', sans-serif;
   };
 }
 
@@ -49,31 +51,34 @@ body {
   }
 }
 
-
-.parallax-background {
-  position: relative;
-  height: 450px;
-  top: 0;
-  padding: 70px 20px 40px;
-}
-
 .homepage-content {
   padding: 10px 40px;
 
   .quotes {
     margin: 0 20px;
+    font-size: 30px;
     color: $secondary-color;;
   }
 
   h1, h2, h3, h4, p {
-    text-align: center;
+    text-align: center
   };
+  .statement{
+    font-size: 1.2em;
+  }
 }
-
 
 .home-page-events {
   padding: 60px 0;
 };
+.home-page-event-hero {
+  @include span-columns(8);
+  @include shift(2);
+  @include media(min-width 320px max-width 480px) {
+       @include span-columns(12);
+       @include shift(0);
+     }
+}
 
 .flex-box {
   position: relative;
@@ -106,6 +111,11 @@ body {
     height: 250px;
     width: auto;
   }
+  h3 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2 em;
+  };
 };
 
 
@@ -126,6 +136,7 @@ body {
   h3 {
     text-transform: uppercase;
     font-weight: 800;
+    font-size: 2 em;
     color: white;
   };
   .email-icon {
@@ -133,10 +144,10 @@ body {
   };
   a.email {
     color: $primary-color;
+    font-size: 30px;
     display: inline-block;
     font-weight: 800;
     color: white;
-    font-size: 1.5em;
   };
   a.social-media-icons{
     display: inline-block;
@@ -150,12 +161,5 @@ body {
 
 .container {
   text-align: center;
-}
-
-.contact-section h2 {
-  color: white;
-}
-.homepage-content h2 {
-  font-weight: bold;
 }
 
